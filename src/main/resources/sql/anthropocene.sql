@@ -13,3 +13,10 @@ create table DetailInfo(
     image varchar(70),
     FOREIGN KEY (idInfo) REFERENCES Information(id)
 );
+
+create table User(
+    id smallint primary key not null auto_increment,
+    nom VARCHAR(100),
+    utilisateur VARCHAR(60),
+    mdp VARCHAR(125)
+);
